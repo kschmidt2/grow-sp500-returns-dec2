@@ -44,8 +44,8 @@ $breakpoint-lg: 717px;
     width: 100%;
     height: 300px;
     margin-top: -10px;
-    @include sm-md-xl {
-      height: 400px;
+    @include x-small {
+      margin-bottom:10px;
     }
   }
 
@@ -54,4 +54,17 @@ $breakpoint-lg: 717px;
     margin-top: 20px;
   }
   
+}
+
+.highcharts-yaxis-grid {
+  & path:nth-child(5) {
+    stroke: $slate-secondary-6;
+    z-index: 100;
+  }
+}
+
+.highcharts-series {
+  & rect:last-child {
+    fill: $green-secondary-5;
+  }
 }
