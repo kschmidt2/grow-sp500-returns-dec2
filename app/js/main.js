@@ -24,8 +24,21 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         plotOptions: {
             series: {
-                groupPadding: .1
-            }
+                groupPadding: .1,
+                dataLabels: {
+                    enabled: true,
+                    inside: true,
+                    formatter: function () {
+                        if (this.x == 2011) {
+                            return 0
+                        }
+                        
+                    }
+                }
+            },
+            // column: {
+            //     minPointLength: 3
+            // }
         },
         legend: {
             enabled: false
@@ -49,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 overflow: 'allow'
             },
             max: 30,
-            min: -40,
-            tickAmount: 8
+            min: -45,
+            tickAmount: 6
         },
         credits: {
             enabled: false
@@ -61,6 +74,37 @@ document.addEventListener('DOMContentLoaded', function () {
             valueDecimals: 1,
             valueSuffix: '%' 
         },
+        annotations: [{
+            shapes: [{
+                type: 'path',
+                points: [{
+                    x: 1999,
+                    y: 7.23,
+                    xAxis: 0,
+                    yAxis: 0
+                }, {
+                    x: 2020,
+                    y: 7.23,
+                    xAxis: 0,
+                    yAxis: 0
+                }]
+            }],
+            labels: [{
+                point: {
+                    x: 2000,
+                    y: 2,
+                    yAxis: 0,
+                    xAxis: 0
+                },
+                useHTML: true,
+                backgroundColor: 'white'
+            }],
+            labelOptions: {
+                formatter: function () {
+                    return "Historical <br/>average"
+                }
+            }
+        }],
         responsive: {
             rules: [{
               condition: {

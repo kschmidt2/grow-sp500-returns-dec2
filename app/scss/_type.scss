@@ -23,10 +23,10 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
         text-transform: uppercase;
         font-size: 14px;
         // bottom margin should be 30px if there is no legend
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         @include sm-md-xl {
             // set this only if there is a chart title + legend
-            margin-bottom: -23px;
+            // margin-bottom: -23px;
         }
     }
 
@@ -71,5 +71,18 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
         @include sm-md-xl {
             float: none;
           } 
+    }
+}
+
+.highcharts-annotation-label {
+    font-size: 14px;
+    line-height: 18px;
+    fill: $slate-secondary-5;
+    & span {
+        background-color: white;
+        padding: 0 5px;
+        @include x-small {
+            background-color: rgba(#fff, .6)
+        }
     }
 }

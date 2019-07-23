@@ -57,7 +57,7 @@ $breakpoint-lg: 717px;
 }
 
 .highcharts-yaxis-grid {
-  & path:nth-child(5) {
+  & path:nth-child(4) {
     stroke: $slate-secondary-6;
     z-index: 100;
   }
