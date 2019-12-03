@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             text: null
         },
         data: {
-            googleSpreadsheetKey: '1wwJMgsiwrGEtFlAPbAOXXLiyP-GBJmbonBQKBuINUHE',
+            googleSpreadsheetKey: '14J-L991np9sUoJ1I5J24LXZf2AnDGLWbkiRTaxhquCc',
             googleSpreadsheetWorksheet: 2,
             startRow: 72,
             endColumn: 1   
@@ -79,12 +79,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 type: 'path',
                 points: [{
                     x: 1999,
-                    y: 7.23,
+                    y: 7.3,
                     xAxis: 0,
                     yAxis: 0
                 }, {
                     x: 2020,
-                    y: 7.23,
+                    y: 7.3,
                     xAxis: 0,
                     yAxis: 0
                 }]
